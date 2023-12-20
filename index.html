@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solver</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <section class="section">
+                <div class="chapters" onclick="open_f_s()">
+                    <h1>Problem: a/b^k => k</h1>
+                </div>
+                <div class="table" id="f_table">
+                    <div class="input" style="margin-left: -900px;">
+                        <input type="text" name="" id="first_solver" placeholder="Input numbers e.g: 2 10" class="inputs">
+                        <a href="#!" class="complete_btn" onclick="FirstComplete()">Solve</a>
+    
+                        <p id="result" class="result">Result: </p>
+                    </div>
+
+                   
+                </div>
+                <!-- next solver -->
+                <div class="chapters" onclick="open_f_s1()">
+                    <h1>Calculator</h1>
+                </div>
+                <div class="table" id="f_table1">
+                    <div class="input" style="margin-left: -700px;">
+                        <input type="text" name="" id="second_solver" placeholder="Input numbers e.g: 2 10" class="inputs">
+                        <a href="#!" class="complete_btn" onclick="Plus()">+</a>
+                        <a href="#!" class="complete_btn" onclick="Minus()">-</a>
+                        <a href="#!" class="complete_btn" onclick="Kp()">*</a>
+                        <a href="#!" class="complete_btn" onclick="Bs()">/</a>
+    
+    
+                        <p id="res" class="result" style="margin-left: -90px;">Result: </p>
+                    </div>
+                   
+                </div>
+                <!-- next solver -->
+                <div class="chapters" onclick="open_f_s2()">
+                    <h1>Parabola X0, Y0</h1>
+                </div>
+                <div class="table" id="f_table2" style="justify-content: center; align-items: start;">
+                    <div class="input">
+                        <input type="text" name="" id="third_solver" placeholder="Input numbers e.g: 2 10 12 (a,b,c)" class="inputs" style="width: 270px;">
+                        <a href="#!" class="complete_btn" onclick="Parabola()">Solve</a>
+    
+    
+                        <p id="res_p" class="result" style="margin-left: -90px;">Result: </p> <br><br>
+    
+                    </div>
+           
+                    <div class="show_coor">
+                        <div class="x_line"></div>
+                        <div class="y_line"></div>
+                        <div class="pointer" id="pointer"></div>
+                    </div> <br><br>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+<script src="./script.js">
+    </script>
+</body>
+</html>
